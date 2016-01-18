@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.akil.resistance.DisplayWarriors"
+    tools:showIn="@layout/activity_warrior_details"
+    android:id="@+id/scrollView_warriordetails"
+    android:background="@drawable/bg_stars"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_stars">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/imageView_picdetails"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView_namedetails"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/text_warriornamedet"
+                android:textSize="30sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_editWarrior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="20dp"
+                android:onClick="editWarriorClicked"
+                android:tint="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/layout_shape">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView_phoneicondetails"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="7dp"
+                    android:paddingBottom="10dp" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="@string/text_contactnumdet"
+                    android:id="@+id/textView_phonenumdetails"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_shape">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/text_aboutdet"
+                android:id="@+id/textView_aboutwarrior"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/text_affiliationdet"
+                android:id="@+id/textView_affiliationdetails"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/text_speciesdet"
+                android:id="@+id/textView_speciesdetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/text_genderdet"
+                android:id="@+id/textView_genderdetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/text_datedet"
+                android:id="@+id/textView_datedetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="match_parent"
+                android:text="@string/text_planetdet"
+                android:id="@+id/textView_planetdetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                style="@style/Button"
+                android:text="@string/button_send"
+                android:id="@+id/button_sendinfo"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="sendInfoClicked" />
+
+            <Button
+                style="@style/Button"
+                android:text="@string/button_delete"
+                android:id="@+id/button_deletewarrior"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="deleteWarriorClicked" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/textView_warID"
+                android:paddingBottom="16dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

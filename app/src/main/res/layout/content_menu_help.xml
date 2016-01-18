@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.akil.resistance.menu_help"
+    tools:showIn="@layout/activity_menu_help"
+    android:id="@+id/scrollView_menu_help"
+    android:background="@drawable/bg_stars"
+    android:scrollbars="none">
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_stars">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_purpose"
+        android:text="@string/text_purpose" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible"/>
+
+    <TextView
+        style="@style/Text_Help"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_usestitle"
+        android:text="@string/text_usestitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible"/>
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_title_addwarrior"
+        android:text="@string/text_title_addwarrior"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_details_addwarrior"
+        android:text="@string/text_details_addwarrior" />
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_title_dispwarriorlist"
+        android:text="@string/text_title_dispwarriorlist"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_details_dispwarriorlist"
+        android:text="@string/text_details_dispwarriorlist"/>
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_title_warriordetails"
+        android:text="@string/text_title_warriordetails"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_details_warriordetails"
+        android:text="@string/text_details_warriordetails"/>
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_title_editwarrior"
+        android:text="@string/text_title_editwarrior"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/Text_Help"
+        android:id="@+id/textView_details_editwarrior"
+        android:text="@string/text_details_editwarrior"/>
+
+</LinearLayout>
+</ScrollView>

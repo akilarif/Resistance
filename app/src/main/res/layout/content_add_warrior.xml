@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.akil.resistance.AddWarrior"
+    tools:showIn="@layout/activity_add_warrior"
+    android:background="@drawable/bg_stars"
+    android:scrollbarSize="10dp"
+    android:scrollbarStyle="outsideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingStart="5dp"
+    android:paddingRight="5dp"
+    android:paddingEnd="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_contacticon"
+            android:background="@drawable/ic_contact_picture"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_name"
+            android:hint="@string/hint_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_phoneicon"
+            android:background="@android:drawable/ic_menu_call"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#9E9E9E" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editText_contactnumber"
+            android:hint="@string/hint_contactnum"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_cameraicon"
+            android:background="@android:drawable/ic_menu_camera"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#9E9E9E" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView_contactpic"
+            android:layout_toRightOf="@+id/imageView_cameraicon"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_changepicture"
+            android:layout_toRightOf="@+id/imageView_contactpic"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/button_changepic"
+            android:onClick="changeClicked" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/text_affiliation"
+        android:id="@+id/textView_affiliation" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup_affiliation">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/radio_light"
+                android:id="@+id/radioButton_lightside"
+                android:checked="true"
+                android:buttonTint="#2196f3" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_dark"
+                android:id="@+id/radioButton_darkside"
+                android:checked="false"
+                android:buttonTint="#F44336" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/text_species"
+            android:id="@+id/textView_species" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_species"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/text_gender"
+            android:id="@+id/textView_gender" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup_gender">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_male"
+            android:id="@+id/radioButton_male"
+            android:checked="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.8" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female"
+            android:id="@+id/radioButton_female"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_machine"
+            android:id="@+id/radioButton_machine"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/text_date"
+            android:id="@+id/textView_date" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText_date"
+            android:hint="@string/hint_date"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/TextView"
+            android:text="@string/text_planet"
+            android:id="@+id/textView_planet" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_planets"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            style="@style/Button"
+            android:text="@string/button_savedetails"
+            android:id="@+id/button_save"
+            android:layout_gravity="center_horizontal"
+            android:onClick="saveDetailsClicked" />
+    </LinearLayout>
+
+</LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@drawable/bg_stars"/>
+
+    </LinearLayout>
+
+</ScrollView>

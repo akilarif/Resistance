@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.akil.resistance.MainScreen">
+    <item
+        android:id="@+id/menu_help"
+        android:orderInCategory="1"
+        android:title="@string/help"
+        app:showAsAction="never"/>
+</menu>

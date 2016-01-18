@@ -1,0 +1,53 @@
+<resources>
+    <string name="help">Help</string>
+    <string name="app_name">Resistance</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_addwarrior">Add Warrior</string>
+    <string name="button_displaywarriors">Display Warriors</string>
+    <string name="title_activity_add_warrior">Add New Warrior</string>
+    <string name="text_name">Name :</string>
+    <string name="text_affiliation">Affiliation :</string>
+    <string name="hint_name">Name of the warrior</string>
+    <string name="radio_light">Light Side</string>
+    <string name="radio_dark">Dark Side</string>
+    <string name="text_species">Species :</string>
+    <string name="text_gender">Gender :</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_machine">Machine</string>
+    <string name="hint_date">Date (dd/mm/yyyy)</string>
+    <string name="text_date">Last Spotted On :</string>
+    <string name="text_planet">Last Known Presence :</string>
+    <string name="text_contactnum">Contact Number :</string>
+    <string name="hint_contactnum">Contact number</string>
+    <string name="button_savedetails">Save Details</string>
+    <string name="button_changepic">Upload</string>
+    <string name="title_activity_warrior_list">Warrior List</string>
+    <string name="title_activity_display_warriors">Warrior Details</string>
+    <string name="text_planetdet">Last Known Presence :</string>
+    <string name="text_datedet">Last Spotted On :</string>
+    <string name="text_genderdet">Gender :</string>
+    <string name="text_speciesdet">Species :</string>
+    <string name="text_affiliationdet">Affiliation :</string>
+    <string name="text_aboutdet">About Warrior</string>
+    <string name="text_contactnumdet">Contact Number</string>
+    <string name="text_warriornamedet">Warrior Name</string>
+    <string name="button_delete">Delete Warrior</string>
+    <string name="button_send">Send Info</string>
+    <string name="text_emptylist">No Warriors</string>
+    <string name="text_warriornamelist">Warrior Name</string>
+    <string name="title_activity_menu_help">HELP</string>
+    <string name="text_purpose">This app serves to “Keep friends close, enemies closer !”</string>
+    <string name="text_usestitle">USING THE APP :</string>
+    <string name="text_title_addwarrior">Adding a New Warrior:</string>
+    <string name="text_details_addwarrior">\nClick “Add Warrior” button in the main screen. A form containing some fields is displayed. Name, contact number and date fields are mandatory.\n</string>
+    <string name="text_title_dispwarriorlist">Displaying List of Stored Warriors:</string>
+    <string name="text_details_dispwarriorlist">\nClick "Display Warriors" button in the main screen. The list of warriors stored in the device is displayed.\n</string>
+    <string name="text_title_warriordetails">Displaying Complete Details of a Warrior:</string>
+    <string name="text_details_warriordetails">\nClick "Display Warriors" button in the main screen. Then, click on the warrior whose complete details need to be displayed. The complete details of this warrior are displayed.\n</string>
+    <string name="text_title_editwarrior">Edit, Share or Delete a Warrior:</string>
+    <string name="text_details_editwarrior">\nClick "Display Warriors" button in the main screen. Then, click on the warrior whose details need to be edited/shared/deleted.\n
+        \nEdit: "Edit Warrior" button is a circular button containing edit icon (pencil icon). Clicking on it will open a screen where the details of the displayed warrior can be edited and saved.\n
+        \nShare: Clicking on "Send Info" will send the details of the displayed warrior through a messaging app.\n
+        \nDelete: Clicking on "Delete Warrior" will delete the details of the displayed warrior from the device.\n</string>
+</resources>
